@@ -1,0 +1,12 @@
+<h1> Welcome to Beats by Rails! </h1>
+<p> Below is the list of songs that you have added to your playlist: </p>
+
+<% @songs.each do |song| %>
+    <p> <%= song.name %></p>
+
+
+    <% end %>
+
+    <div>
+    <%= link_to "Add a Song!", "songs/new" %>
+    </div>
